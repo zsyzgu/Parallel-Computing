@@ -1,0 +1,290 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF2B761420BCFF8D00FE1E41 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FF2B761320BCFF8D00FE1E41 /* main.cpp */; };
+		FF2B762020BD1E4100FE1E41 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2B761F20BD1E4100FE1E41 /* GLUT.framework */; };
+		FF2B762220BD1EFB00FE1E41 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2B762120BD1EFB00FE1E41 /* OpenGL.framework */; };
+		FF2B762420BD2B4300FE1E41 /* libomp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FF2B762320BD2B4300FE1E41 /* libomp.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF2B760E20BCFF8D00FE1E41 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FF2B761020BCFF8D00FE1E41 /* mandelbrot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mandelbrot; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF2B761320BCFF8D00FE1E41 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FF2B761F20BD1E4100FE1E41 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		FF2B762120BD1EFB00FE1E41 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		FF2B762320BD2B4300FE1E41 /* libomp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libomp.dylib; path = ../../../../../../usr/local/Cellar/llvm/6.0.0/lib/libomp.dylib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF2B760D20BCFF8D00FE1E41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF2B762420BD2B4300FE1E41 /* libomp.dylib in Frameworks */,
+				FF2B762220BD1EFB00FE1E41 /* OpenGL.framework in Frameworks */,
+				FF2B762020BD1E4100FE1E41 /* GLUT.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF2B760720BCFF8D00FE1E41 = {
+			isa = PBXGroup;
+			children = (
+				FF2B761220BCFF8D00FE1E41 /* mandelbrot */,
+				FF2B761120BCFF8D00FE1E41 /* Products */,
+				FF2B761E20BD1E4100FE1E41 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FF2B761120BCFF8D00FE1E41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF2B761020BCFF8D00FE1E41 /* mandelbrot */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF2B761220BCFF8D00FE1E41 /* mandelbrot */ = {
+			isa = PBXGroup;
+			children = (
+				FF2B761320BCFF8D00FE1E41 /* main.cpp */,
+			);
+			path = mandelbrot;
+			sourceTree = "<group>";
+		};
+		FF2B761E20BD1E4100FE1E41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF2B762320BD2B4300FE1E41 /* libomp.dylib */,
+				FF2B762120BD1EFB00FE1E41 /* OpenGL.framework */,
+				FF2B761F20BD1E4100FE1E41 /* GLUT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF2B760F20BCFF8D00FE1E41 /* mandelbrot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF2B761720BCFF8D00FE1E41 /* Build configuration list for PBXNativeTarget "mandelbrot" */;
+			buildPhases = (
+				FF2B760C20BCFF8D00FE1E41 /* Sources */,
+				FF2B760D20BCFF8D00FE1E41 /* Frameworks */,
+				FF2B760E20BCFF8D00FE1E41 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mandelbrot;
+			productName = mandelbrot;
+			productReference = FF2B761020BCFF8D00FE1E41 /* mandelbrot */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF2B760820BCFF8D00FE1E41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "古裔正";
+				TargetAttributes = {
+					FF2B760F20BCFF8D00FE1E41 = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FF2B760B20BCFF8D00FE1E41 /* Build configuration list for PBXProject "mandelbrot" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FF2B760720BCFF8D00FE1E41;
+			productRefGroup = FF2B761120BCFF8D00FE1E41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF2B760F20BCFF8D00FE1E41 /* mandelbrot */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF2B760C20BCFF8D00FE1E41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF2B761420BCFF8D00FE1E41 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FF2B761520BCFF8D00FE1E41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FF2B761620BCFF8D00FE1E41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FF2B761820BCFF8D00FE1E41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CC = /usr/local/opt/llvm/bin/clang;
+				CLANG_ENABLE_MODULES = NO;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/llvm/6.0.0/lib/clang/6.0.0/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/llvm/6.0.0/lib;
+				OTHER_CFLAGS = "-fopenmp";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FF2B761920BCFF8D00FE1E41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				CC = /usr/local/opt/llvm/bin/clang;
+				CLANG_ENABLE_MODULES = NO;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/llvm/6.0.0/lib/clang/6.0.0/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/Cellar/llvm/6.0.0/lib;
+				OTHER_CFLAGS = "-fopenmp";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF2B760B20BCFF8D00FE1E41 /* Build configuration list for PBXProject "mandelbrot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF2B761520BCFF8D00FE1E41 /* Debug */,
+				FF2B761620BCFF8D00FE1E41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF2B761720BCFF8D00FE1E41 /* Build configuration list for PBXNativeTarget "mandelbrot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF2B761820BCFF8D00FE1E41 /* Debug */,
+				FF2B761920BCFF8D00FE1E41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF2B760820BCFF8D00FE1E41 /* Project object */;
+}
